@@ -8,7 +8,8 @@ public class Main {
 Название переменных может быть любым, но если состоит из двух слов и более, должно соответствовать правилу camelCase.
 Выведите в консоль значение каждой переменной в формате «Значение переменной … с типом … равно …».
 */
-
+       System.out.println("Задача № 1");
+   ;
         int integerInt = 4;
         byte integerByte = 1;
         short integerShort = 2;
@@ -50,6 +51,8 @@ public class Main {
         Результат задачи выведите в консоль в формате: «На каждого ученика рассчитано … листов бумаги».
         Для объявления переменных не используйте тип var.*/
 
+        System.out.println("Задача № 3");
+       ;
            int groupLydmila = 23;
            int groupAnna = 27;
            int groupEkaterina =30;
@@ -68,8 +71,54 @@ public class Main {
                 Назвали переменные согласно правилам Java.
         Соблюдаются правила пунктуации.
                 Решение задания вывели в консоль.
-
         */
+
+
+
+        /*
+        Задача 4
+        Производительность машины для изготовления бутылок — 16 бутылок за 2 минуты. Какая производительность машины будет:
+        за 20 минут,
+                в сутки,
+                за 3 дня,
+                за 1 месяц?
+                Рассчитывайте производительность работы машины в том случае, если она работает без перерыва заданный промежуток времени.
+                Результаты подсчетов выведите в консоль в формате: «За … машина произвела … штук бутылок».
+        Для объявления переменных не используйте тип var.
+         */
+        System.out.println("Задача № 4");
+       // приводим значения к единой еденице измерения (минуте)
+       int minutes = 1;
+       int hour = 60 * minutes;
+       int day = 24 * hour;
+       int month = 30 * day ;
+       int quantityContainer = 16;
+       int quantityMinutes = 2;
+       int performanceContainerMinutes = quantityContainer / quantityMinutes;
+       //задаваемые  условием задачи  значения переменных
+       int givenMinutes = 20;
+       int givenDay = 1;
+       int given3Day = 3;
+       int givenMonth = 1 ;
+
+       int performanceGivenMinutes = performanceContainerMinutes * (givenMinutes * minutes);
+        String minutes20 = givenMinutes + "минут";
+        System.out.println("За "+givenMinutes+" машина произвела "+performanceGivenMinutes+" штук бутылок.");
+
+
+       int performanceGivenDay = performanceContainerMinutes *(givenDay*day);
+       String day1 = givenDay+ " Сутки";
+       System.out.println("За "+day1+" машина произвела "+ performanceGivenDay +" штук бутылок.");
+
+
+       String day3 = given3Day +" дня";
+       int performanceGiven3Day = performanceContainerMinutes * (given3Day*day);
+       System.out.println("За "+day3+" машина произвела "+ performanceGiven3Day +" штук бутылок.");
+
+
+       String month1M = givenMonth +" месяц";
+       int performanceGivenMonth = performanceContainerMinutes * (givenMonth * month);
+       System.out.println("За "+ month1M +" машина произвела "+ performanceGivenMonth +" штук бутылок.");
 
 
 
