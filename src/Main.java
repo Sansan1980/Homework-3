@@ -39,7 +39,7 @@ public class Main {
                         double c = 2.786;
                                 byte d = 67;
                                         short e = 569;
-                                                long f = 987678965549L;
+                                                long  f = 987678965549L;
 
 
 
