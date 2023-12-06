@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        System.out.println("");
 /*
 
 
@@ -22,6 +23,7 @@ public class Main {
         System.out.println(integerLong );
         System.out.println(fractionalFloat);
         System.out.println(fractionalDouble);
+        System.out.println("");
 
         /*Задача 2
         Ниже дан список различных значений. Инициализируйте переменные, используйте изученные ранее типы переменных.
@@ -41,6 +43,7 @@ public class Main {
                                 byte d = 67;
                                         short e = 569;
                                                 long  f = 987678965549L;
+        System.out.println("");
 
 
         /*Задача 3
@@ -61,6 +64,7 @@ public class Main {
            float personalSheets = generalPaper/totalStudents;
 
            System.out.println(" На каждого ученика рассчитано "+personalSheets+" листов бумаги" );
+           System.out.println("");
 
 
 
@@ -102,8 +106,8 @@ public class Main {
        int givenMonth = 1 ;
 
        int performanceGivenMinutes = performanceContainerMinutes * (givenMinutes * minutes);
-        String minutes20 = givenMinutes + "минут";
-        System.out.println("За "+givenMinutes+" машина произвела "+performanceGivenMinutes+" штук бутылок.");
+        String minutes20 = givenMinutes + " минут";
+        System.out.println("За "+minutes20+" машина произвела "+performanceGivenMinutes+" штук бутылок.");
 
 
        int performanceGivenDay = performanceContainerMinutes *(givenDay*day);
@@ -111,14 +115,40 @@ public class Main {
        System.out.println("За "+day1+" машина произвела "+ performanceGivenDay +" штук бутылок.");
 
 
-       String day3 = given3Day +" дня";
        int performanceGiven3Day = performanceContainerMinutes * (given3Day*day);
+        String day3 = given3Day +" дня";
        System.out.println("За "+day3+" машина произвела "+ performanceGiven3Day +" штук бутылок.");
 
 
-       String month1M = givenMonth +" месяц";
        int performanceGivenMonth = performanceContainerMinutes * (givenMonth * month);
+        String month1M = givenMonth +" месяц";
        System.out.println("За "+ month1M +" машина произвела "+ performanceGivenMonth +" штук бутылок.");
+       System.out.println("");
+
+
+       /*
+       Задача 5
+       На ремонт школы нужно 120 банок краски двух цветов: белой и коричневой.
+        На один класс уходит 2 банки белой и 4 банки коричневой краски.
+         Сколько банок каждой краски было куплено?
+       Выведите результат задачи в консоль в формате:
+       «В школе, где … классов, нужно … банок белой краски и … банок коричневой краски».
+       Для объявления переменных не используйте тип var.*/
+
+        System.out.println("Задача № 5");
+        int generalDye = 120;
+        int dueWhite = 2;
+        int dueBrown = 4;
+        int klass1 = dueWhite+dueBrown;
+        int generalKlass = generalDye/klass1;
+        int generalDueWhite = dueWhite * generalKlass;
+        int generalDueBrown = dueBrown * generalKlass;
+
+        System.out.println("В школе, где "+generalKlass+" классов, нужно "+generalDueWhite+" банок белой краски " +
+                "и "+generalDueBrown+" банок коричневой краски");
+
+
+
 
 
 
