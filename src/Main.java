@@ -217,7 +217,7 @@ public class Main {
 
          */
 
-        System.out.println("Задача № 7");
+        System.out.println("Задача №  7");
         int salaryMonthMasha = 67760;
         int salaryMonthDenis = 83690;
         int salaryMonthKristina = 76230;
