@@ -217,7 +217,7 @@ public class Main {
 
          */
 
-        System.out.println("Задача №  7");
+        System.out.println("Задача №  8");
         int salaryMonthMasha = 67760;
         int salaryMonthDenis = 83690;
         int salaryMonthKristina = 76230;
@@ -240,8 +240,8 @@ public class Main {
         int deltaAnnualIncomeKristina  = newSalaryYearKristina - salaryYearKristina;
 
         System.out.println("Маша теперь получает "+newSalaryMonthMasha+" рублей. Годовой доход вырос на "+deltaAnnualIncomeMasha+" рублей");
-        System.out.println("Маша теперь получает "+newSalaryYearDenis+" рублей. Годовой доход вырос на "+deltaAnnualIncomeDenis+" рублей");
-        System.out.println("Маша теперь получает "+newSalaryYearKristina+" рублей. Годовой доход вырос на "+deltaAnnualIncomeKristina+" рублей");
+        System.out.println("Денис теперь получает "+newSalaryYearDenis+" рублей. Годовой доход вырос на "+deltaAnnualIncomeDenis+" рублей");
+        System.out.println("Кристина теперь получает "+newSalaryYearKristina+" рублей. Годовой доход вырос на "+deltaAnnualIncomeKristina+" рублей");
 
 
 
