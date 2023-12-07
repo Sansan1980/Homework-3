@@ -195,11 +195,7 @@ public class Main {
         System.out.println(" Eсли спортсмен будет терять каждый день по 250 грамм , то "+ dayQuarter +" дней уйдет на похудение");
         System.out.println(" Eсли спортсмен будет терять каждый день по 500 грамм , то "+ dayfiveHundred +" дней уйдет на похудение");
         System.out.println("В среднем  может потребоваться "+ averageDay +" дней в среднем, чтобы добиться результата похудения");
-
-
-
-
-
+        System.out.println("");
 
 
         /*
@@ -220,6 +216,37 @@ public class Main {
 Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
 
          */
+
+        System.out.println("Задача № 7");
+        int salaryMonthMasha = 67760;
+        int salaryMonthDenis = 83690;
+        int salaryMonthKristina = 76230;
+
+        int salaryYearMasha = salaryMonthMasha * 12;
+        int salaryYearDenis = salaryMonthDenis * 12;
+        int salaryYearKristina = salaryMonthKristina * 12;
+
+
+        int newSalaryMonthMasha = (salaryMonthMasha /100)*10+salaryMonthMasha;
+        int newSalaryMonthDenis = (salaryMonthDenis /100)*10+salaryMonthDenis;
+        int newSalaryMonthKristina = (salaryMonthKristina /100)*10+salaryMonthKristina;
+
+        int newSalaryYearMasha = newSalaryMonthMasha * 12;
+        int newSalaryYearDenis = newSalaryMonthDenis * 12;
+        int newSalaryYearKristina = newSalaryMonthKristina * 12;
+
+        int deltaAnnualIncomeMasha  = newSalaryYearMasha - salaryYearMasha;
+        int deltaAnnualIncomeDenis = newSalaryYearDenis - salaryYearDenis;
+        int deltaAnnualIncomeKristina  = newSalaryYearKristina - salaryYearKristina;
+
+        System.out.println("Маша теперь получает "+newSalaryMonthMasha+" рублей. Годовой доход вырос на "+deltaAnnualIncomeMasha+" рублей");
+        System.out.println("Маша теперь получает "+newSalaryYearDenis+" рублей. Годовой доход вырос на "+deltaAnnualIncomeDenis+" рублей");
+        System.out.println("Маша теперь получает "+newSalaryYearKristina+" рублей. Годовой доход вырос на "+deltaAnnualIncomeKristina+" рублей");
+
+
+
+
+
 
 
 
