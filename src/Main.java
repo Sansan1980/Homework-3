@@ -164,11 +164,9 @@ public class Main {
 
 Результат в граммах и килограммах напечатайте в консоль.
 
-Важ
 
          */
         System.out.println("Задача № 6");
-
         int bananas = 5 * 80;
         int milk = 2 * 105;
         int iceCream =2 * 100;
@@ -177,7 +175,7 @@ public class Main {
         double kilogram = (totalWeight /1000);
         System.out.println(" Результат в граммах "+ totalWeight);
         System.out.println(" Результат в килограммах " + kilogram);
-
+        System.out.println("");
 
         /*
         Задача 7
@@ -186,9 +184,23 @@ public class Main {
 Посчитайте, сколько дней уйдет на похудение, если спортсмен будет терять каждый день по 250 грамм,
  а сколько — если каждый день будет худеть на 500 грамм.
 Посчитайте, сколько может потребоваться дней в среднем, чтобы добиться результата похудения.
-Результаты всех подсчетов выведите в консоль
+Результаты всех подсчетов выведите в консоль*/
+        System.out.println("Задача № 7");
+        int quarter = 250;
+        int fiveHundred = 500;
+        int excessWeight = 7*1000 ;
+        int dayQuarter = excessWeight/quarter;
+        int dayfiveHundred =excessWeight/fiveHundred;
+        int averageDay = ((dayQuarter+dayfiveHundred)/2);
+        System.out.println(" Eсли спортсмен будет терять каждый день по 250 грамм , то "+ dayQuarter +" дней уйдет на похудение");
+        System.out.println(" Eсли спортсмен будет терять каждый день по 500 грамм , то "+ dayfiveHundred +" дней уйдет на похудение");
+        System.out.println("В среднем  может потребоваться "+ averageDay +" дней в среднем, чтобы добиться результата похудения");
 
-         */
+
+
+
+
+
 
         /*
         Задача 8
